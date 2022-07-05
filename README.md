@@ -3,7 +3,7 @@ A MongoDb Connection with CRUD operations
 
 API Infos:
 
- @PostMapping("")
+    @PostMapping("")
     public User createUser(@RequestBody User user){
         user.setId(null);
         return userRepository.save(user);
